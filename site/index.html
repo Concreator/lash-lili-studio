@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lash Lili — Студия ресниц и бровей в Казани</title>
+  <meta name="description" content="Студия наращивания ресниц и оформления бровей в Казани. VIP-мастера, LED-технология, 30+ эффектов. Запишитесь онлайн!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span class="nav__logo-text">Lash Lili</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">О студии</a>
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#price" class="nav__link">Прайс</a>
+        <a href="#masters" class="nav__link">Мастера</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </div>
+      <a href="https://telegram.me/ssn_beautybot" target="_blank" class="nav__cta">Записаться</a>
+      <button class="nav__burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__inner">
+      <a href="#about" class="mobile-menu__link">О студии</a>
+      <a href="#services" class="mobile-menu__link">Услуги</a>
+      <a href="#price" class="mobile-menu__link">Прайс</a>
+      <a href="#masters" class="mobile-menu__link">Мастера</a>
+      <a href="#reviews" class="mobile-menu__link">Отзывы</a>
+      <a href="#contacts" class="mobile-menu__link">Контакты</a>
+      <div class="mobile-menu__ctas">
+        <a href="https://telegram.me/ssn_beautybot" target="_blank" class="btn btn--primary">💬 Telegram</a>
+        <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="btn btn--secondary">💬 Max</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__badge">✦ VIP-мастера Казани ✦</p>
+      <h1 class="hero__title">
+        Красота — это искусство,<br>
+        а мы — ваши художники<br>
+        <span class="hero__title-accent">взгляда</span>
+      </h1>
+      <p class="hero__subtitle">Студия наращивания ресниц и оформления бровей.<br>LED-технология · 30+ эффектов · Рейтинг 4.9 ⭐</p>
+      <div class="hero__buttons">
+        <a href="https://telegram.me/ssn_beautybot" target="_blank" class="btn btn--primary btn--lg">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.97 9.28c-.146.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.357.263-.727.263l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+          Telegram
+        </a>
+        <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="btn btn--secondary btn--lg">
+          💬 Написать в Max
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number">243+</span>
+          <span class="hero__stat-label">отзыва</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">4.9</span>
+          <span class="hero__stat-label">рейтинг</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">30+</span>
+          <span class="hero__stat-label">эффектов</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number">5+</span>
+          <span class="hero__stat-label">лет опыта</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Листайте вниз</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- О студии -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="section__badge">О студии</p>
+          <h2 class="section__title">Почувствуйте ощущение <span class="accent">красоты</span></h2>
+          <p class="about__description">
+            Lash Lili — это студия, где каждый визит становится событием.
+            Мы создаём образ, который подчёркивает вашу индивидуальность.
+          </p>
+          <div class="about__features">
+            <div class="about__feature">
+              <div class="about__feature-icon">💎</div>
+              <div>
+                <h3>VIP-мастера</h3>
+                <p>Опыт от 5 лет, профессиональная косметика</p>
+              </div>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">✨</div>
+              <div>
+                <h3>LED-технология</h3>
+                <p>Новейший метод наращивания ресниц</p>
+              </div>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🧖‍♀️</div>
+              <div>
+                <h3>Уютная атмосфера</h3>
+                <p>Тапочки, плед, чай и спокойная музыка</p>
+              </div>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🎓</div>
+              <div>
+                <h3>Обучение</h3>
+                <p>Курсы наращивания для начинающих и мастеров</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="slideshow">
+            <img src="assets/studio-1.webp" alt="Студия Lash Lili" class="slideshow__slide" loading="eager">
+            <img src="assets/studio-2.jpg" alt="Студия Lash Lili — интерьер" class="slideshow__slide" loading="lazy">
+            <img src="assets/studio-3.jpg" alt="Студия Lash Lili — работы" class="slideshow__slide" loading="lazy">
+            <img src="assets/studio-4.jpg" alt="Студия Lash Lili — атмосфера" class="slideshow__slide" loading="lazy">
+            <img src="assets/studio-5.jpg" alt="Студия Lash Lili — результат" class="slideshow__slide" loading="lazy">
+          </div>
+          <div class="about__stats-row">
+            <div class="about__card">
+              <span class="about__card-number">30+</span>
+              <span class="about__card-text">эффектов</span>
+            </div>
+            <div class="about__card">
+              <span class="about__card-number">243</span>
+              <span class="about__card-text">отзыва</span>
+            </div>
+            <div class="about__card">
+              <span class="about__card-number">5</span>
+              <span class="about__card-text">мастеров</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section__badge section__badge--center">Наши услуги</p>
+      <h2 class="section__title section__title--center">Выберите свой <span class="accent">идеальный</span> образ</h2>
+      <div class="services__tabs">
+        <button class="services__tab services__tab--active" data-tab="lashes">Ресницы</button>
+        <button class="services__tab" data-tab="led">LED</button>
+        <button class="services__tab" data-tab="effects">Эффекты</button>
+        <button class="services__tab" data-tab="brows">Брови</button>
+        <button class="services__tab" data-tab="nails">Маникюр</button>
+        <button class="services__tab" data-tab="training">Обучение</button>
+      </div>
+      <div class="services__content">
+        <!-- Ресницы -->
+        <div class="services__panel services__panel--active" id="panel-lashes">
+          <div class="services__cards">
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Наращивание 1,5D</h3>
+                <span class="service-card__price">от 2 600 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1.5 часа</p>
+              <p class="service-card__desc">Натуральный объём для естественного взгляда</p>
+              <p class="service-card__master">Рекомендация: любой мастер</p>
+            </div>
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">Хит</div>
+              <div class="service-card__header">
+                <h3>2D Мокрый эффект</h3>
+                <span class="service-card__price">2 600 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Сочный, выразительный взгляд как после душа</p>
+              <p class="service-card__master">Рекомендация: Альбина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Наращивание 3D</h3>
+                <span class="service-card__price">2 700 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Выразительный объём для особых случаев</p>
+              <p class="service-card__master">Рекомендация: Анна</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Наращивание 4D</h3>
+                <span class="service-card__price">3 000 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Максимальная густота и объём</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Наращивание уголков</h3>
+                <span class="service-card__price">1 900 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1 час</p>
+              <p class="service-card__desc">Акцент на внешних уголках глаз</p>
+              <p class="service-card__master">Рекомендация: любой мастер</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Нижние ресницы</h3>
+                <span class="service-card__price">от 900 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1 час</p>
+              <p class="service-card__desc">Дополнение к верхним для полного образа</p>
+              <p class="service-card__master">Рекомендация: любой мастер</p>
+            </div>
+          </div>
+        </div>
+        <!-- LED -->
+        <div class="services__panel" id="panel-led">
+          <div class="services__cards">
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">LED</div>
+              <div class="service-card__header">
+                <h3>LED Классика</h3>
+                <span class="service-card__price">2 700 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1.5 часа</p>
+              <p class="service-card__desc">Новейшая LED-технология наращивания</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>LED 2D</h3>
+                <span class="service-card__price">2 800 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Двойной объём с LED-эффектом</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">Популярно</div>
+              <div class="service-card__header">
+                <h3>LED 3D</h3>
+                <span class="service-card__price">от 2 900 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Тройной объём с невероятным блеском</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>LED 4D</h3>
+                <span class="service-card__price">от 3 200 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Четырёхмерный объём для максимального эффекта</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>LED 5D</h3>
+                <span class="service-card__price">от 3 400 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Пятый уровень объёма — для смелых</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Скоростное LED</h3>
+                <span class="service-card__price">от 2 900 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1 час</p>
+              <p class="service-card__desc">Быстрое наращивание за 60 минут</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+          </div>
+        </div>
+        <!-- Эффекты -->
+        <div class="services__panel" id="panel-effects">
+          <div class="services__cards">
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">Тренд</div>
+              <div class="service-card__header">
+                <h3>Эффект Аниме</h3>
+                <span class="service-card__price">2 800 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Длинные ресницы в стиле аниме-девочек</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Эффект Голливуд</h3>
+                <span class="service-card__price">3 400 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Роскошные ресницы как у звёзд Голливуда</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>2D Лучи</h3>
+                <span class="service-card__price">от 2 800 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Светящиеся лучики в уголках глаз</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Скоростное 2D мокрый LED</h3>
+                <span class="service-card__price">3 000 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1 час</p>
+              <p class="service-card__desc">Мокрый эффект за 60 минут</p>
+              <p class="service-card__master">Рекомендация: Виктория</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Цветные ресницы</h3>
+                <span class="service-card__price">от 100 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 15 мин</p>
+              <p class="service-card__desc">Яркие акценты на уголках</p>
+              <p class="service-card__master">Рекомендация: любой мастер</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Выбор на месте</h3>
+                <span class="service-card__price">от 2 500 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2 часа</p>
+              <p class="service-card__desc">Мастер подберёт идеальный эффект для вас</p>
+              <p class="service-card__master">Рекомендация: Альбина</p>
+            </div>
+          </div>
+        </div>
+        <!-- Брови -->
+        <div class="services__panel" id="panel-brows">
+          <div class="services__cards">
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">Хит</div>
+              <div class="service-card__header">
+                <h3>Ламинирование бровей</h3>
+                <span class="service-card__price">по запросу</span>
+              </div>
+              <p class="service-card__time">⏱ ~1 час</p>
+              <p class="service-card__desc">Идеальная форма на 4-6 недель</p>
+              <p class="service-card__master">Рекомендация: Альбина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Окрашивание бровей</h3>
+                <span class="service-card__price">по запросу</span>
+              </div>
+              <p class="service-card__time">⏱ ~30 мин</p>
+              <p class="service-card__desc">Подберём идеальный оттенок</p>
+              <p class="service-card__master">Рекомендация: Альбина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Коррекция бровей</h3>
+                <span class="service-card__price">по запросу</span>
+              </div>
+              <p class="service-card__time">⏱ ~30 мин</p>
+              <p class="service-card__desc">Поддержание идеальной формы</p>
+              <p class="service-card__master">Рекомендация: Альбина</p>
+            </div>
+          </div>
+        </div>
+        <!-- Маникюр -->
+        <div class="services__panel" id="panel-nails">
+          <div class="services__cards">
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">Популярно</div>
+              <div class="service-card__header">
+                <h3>Маникюр + гель-лак</h3>
+                <span class="service-card__price">1 699 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2.2 часа</p>
+              <p class="service-card__desc">Полное покрытие со снятием старого</p>
+              <p class="service-card__master">Рекомендация: Полина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Маникюр без снятия</h3>
+                <span class="service-card__price">1 499 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1.5 часа</p>
+              <p class="service-card__desc">Покрытие без удаления старого лака</p>
+              <p class="service-card__master">Рекомендация: Полина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Наращивание ногтей</h3>
+                <span class="service-card__price">от 1 900 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 2-3 часа</p>
+              <p class="service-card__desc">Длина 1-7, любая форма</p>
+              <p class="service-card__master">Рекомендация: Аделина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Коррекция ногтей</h3>
+                <span class="service-card__price">1 800 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1.5 часа</p>
+              <p class="service-card__desc">Поддержание идеальной формы</p>
+              <p class="service-card__master">Рекомендация: Полина</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Педикюр</h3>
+                <span class="service-card__price">800 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1 час</p>
+              <p class="service-card__desc">Модельный педикюр</p>
+              <p class="service-card__master">Рекомендация: любой мастер</p>
+            </div>
+          </div>
+        </div>
+        <!-- Обучение -->
+        <div class="services__panel" id="panel-training">
+          <div class="services__cards">
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>Базовое обучение</h3>
+                <span class="service-card__price">6 000 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 5 часов</p>
+              <p class="service-card__desc">Наращивание ресниц с нуля. Практика на моделях</p>
+              <p class="service-card__master">Рекомендация: Лилия (руководитель)</p>
+            </div>
+            <div class="service-card service-card--hit">
+              <div class="service-card__badge">Популярно</div>
+              <div class="service-card__header">
+                <h3>LED обучение</h3>
+                <span class="service-card__price">8 900 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 6 часов</p>
+              <p class="service-card__desc">Повышение квалификации в LED-технологии</p>
+              <p class="service-card__master">Рекомендация: Лилия (руководитель)</p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__header">
+                <h3>LED полное обучение</h3>
+                <span class="service-card__price">12 500 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 5 часов</p>
+              <p class="service-card__desc">Полный курс LED-наращивания</p>
+              <p class="service-card__master">Рекомендация: Лилия (руководитель)</p>
+            </div>
+            <div class="service-card service-card--premium">
+              <div class="service-card__badge">Премиум</div>
+              <div class="service-card__header">
+                <h3>Наставничество</h3>
+                <span class="service-card__price">50 000 ₽</span>
+              </div>
+              <p class="service-card__time">⏱ 1 месяц</p>
+              <p class="service-card__desc">Индивидуальное обучение под руководством Лилии</p>
+              <p class="service-card__master">Рекомендация: Лилия (руководитель)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Прайс -->
+  <section class="price" id="price">
+    <div class="container">
+      <p class="section__badge section__badge--center">Прайс-лист</p>
+      <h2 class="section__title section__title--center">Честные цены <span class="accent">без сюрпризов</span></h2>
+      <p class="price__note">Цены «от» — стартовая стоимость. Точную стоимость озвучивает мастер после осмотра.</p>
+
+      <div class="price__categories">
+        <button class="price__cat price__cat--active" data-cat="lashes">Ресницы</button>
+        <button class="price__cat" data-cat="led">LED</button>
+        <button class="price__cat" data-cat="effects">Эффекты</button>
+        <button class="price__cat" data-cat="correction">Коррекция</button>
+        <button class="price__cat" data-cat="nails">Маникюр</button>
+        <button class="price__cat" data-cat="training">Обучение</button>
+      </div>
+
+      <div class="price__table-wrapper">
+        <table class="price__table" id="priceTable">
+          <thead>
+            <tr>
+              <th>Услуга</th>
+              <th>Цена</th>
+              <th>Время</th>
+              <th class="price__table-master">Мастер</th>
+            </tr>
+          </thead>
+          <tbody id="priceBody">
+            <!-- JS заполнит -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="price__cta">
+        <p>Не нашли нужную услугу?</p>
+        <div class="hero__buttons">
+          <a href="https://telegram.me/ssn_beautybot" target="_blank" class="btn btn--primary">💬 Спросите в Telegram</a>
+          <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="btn btn--secondary">💬 Спросите в Max</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Мастера -->
+  <section class="masters" id="masters">
+    <div class="container">
+      <p class="section__badge section__badge--center">Наша команда</p>
+      <h2 class="section__title section__title--center">Ваши <span class="accent">VIP-мастера</span></h2>
+      <div class="masters__grid">
+        <div class="master-card">
+          <div class="master-card__avatar">А</div>
+          <h3 class="master-card__name">Альбина</h3>
+          <p class="master-card__spec">Наращивание ресниц, ламинирование, брови</p>
+          <p class="master-card__review">«Качество на высоте, очень довольна!»</p>
+        </div>
+        <div class="master-card">
+          <div class="master-card__avatar">В</div>
+          <h3 class="master-card__name">Виктория</h3>
+          <p class="master-card__spec">Наращивание ресниц, эффект анимэ, LED</p>
+          <p class="master-card__review">«Результат превзошёл ожидания»</p>
+        </div>
+        <div class="master-card master-card--featured">
+          <div class="master-card__avatar master-card__avatar--gold">Л</div>
+          <h3 class="master-card__name">Лилия</h3>
+          <p class="master-card__role">Руководитель, VIP-мастер</p>
+          <p class="master-card__spec">Обучение, сложные случаи</p>
+          <p class="master-card__review">«Все выпускники рекомендуют нас на 100%»</p>
+        </div>
+        <div class="master-card">
+          <div class="master-card__avatar">П</div>
+          <h3 class="master-card__name">Полина</h3>
+          <p class="master-card__spec">Ресницы, ламинирование, маникюр</p>
+          <p class="master-card__review">«Чуткая девушка, все пожелания учла»</p>
+        </div>
+        <div class="master-card">
+          <div class="master-card__avatar">А</div>
+          <h3 class="master-card__name">Аделина</h3>
+          <p class="master-card__spec">Наращивание ресниц, маникюр</p>
+          <p class="master-card__review">«Быстро, качественно, красиво»</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <p class="section__badge section__badge--center">Отзывы</p>
+      <h2 class="section__title section__title--center">Что говорят наши <span class="accent">клиенты</span></h2>
+      <div class="reviews__rating">
+        <span class="reviews__rating-number">4.9</span>
+        <span class="reviews__rating-stars">⭐⭐⭐⭐⭐</span>
+        <span class="reviews__rating-count">243 отзыва в VK</span>
+      </div>
+      <div class="reviews__grid">
+        <div class="review-card">
+          <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-card__text">«Ресницы не отвалились, аккуратно и натурально. Результат превзошёл ожидания! Обязательно вернусь 💗»</p>
+          <p class="review-card__author">— Отзыв из VK</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-card__text">«Уютная атмосфера, тапочки, плед, чай. Мастер учла все пожелания, подобрала нужный объём 🌸»</p>
+          <p class="review-card__author">— Отзыв из VK</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-card__text">«Быстро и качественно! С такими приятными ценами — выгодно. Рекомендую всем подругам 🫶»</p>
+          <p class="review-card__author">— Отзыв из VK</p>
+        </div>
+      </div>
+      <div class="reviews__more">
+        <a href="https://vk.com/lash_lili_studio" target="_blank" class="btn btn--outline">Читать все отзывы в VK →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Наши работы -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <p class="section__badge section__badge--center">Наши работы</p>
+      <h2 class="section__title section__title--center">Результаты наших <span class="accent">мастеров</span></h2>
+      <div class="gallery__grid">
+        <img src="assets/work-01.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-02.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-03.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-04.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-05.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-06.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-07.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-08.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-09.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-10.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-11.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-12.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-13.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-14.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-15.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-16.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-17.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-18.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-19.jpg" alt="Работа мастера" loading="lazy">
+        <img src="assets/work-20.jpg" alt="Работа мастера" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner">
+        <h2 class="cta__title">Готовы к <span class="accent">преображению</span>?</h2>
+        <p class="cta__subtitle">Запишитесь прямо сейчас и получите скидку 10% на первое посещение</p>
+        <div class="cta__buttons">
+          <a href="https://telegram.me/ssn_beautybot" target="_blank" class="btn btn--primary btn--lg">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.97 9.28c-.146.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.357.263-.727.263l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+            Telegram
+          </a>
+          <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="btn btn--secondary btn--lg">💬 Написать в Max</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__grid">
+        <div class="contacts__info">
+          <p class="section__badge">Контакты</p>
+          <h2 class="section__title">Ждём вас в <span class="accent">нашей студии</span></h2>
+          <div class="contacts__items">
+            <div class="contacts__item">
+              <span class="contacts__item-icon">📍</span>
+              <div>
+                <h3>Адрес</h3>
+                <p>г. Казань, Советский район,<br>Пионерская ул., 8А</p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__item-icon">🕐</span>
+              <div>
+                <h3>Режим работы</h3>
+                <p>Ежедневно, до 21:00</p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__item-icon">📞</span>
+              <div>
+                <h3>Телефон</h3>
+                <p><a href="tel:+79046653016">8 904 665 30 16</a></p>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__item-icon">💬</span>
+              <div>
+                <h3>Мессенджеры</h3>
+                <div class="contacts__socials">
+                  <a href="https://telegram.me/ssn_beautybot" target="_blank" class="contacts__social">Telegram</a>
+                  <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="contacts__social">Max</a>
+                  <a href="https://vk.com/lash_lili_studio" target="_blank" class="contacts__social">VK</a>
+                  <span class="contacts__social">Instagram*</span>
+                </div>
+                <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">* Instagram — социальная сеть, запрещённая на территории РФ (решение Роскомнадзора)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?z=16&ll=49.083898%2C55.790000&pt=49.083898%2C55.790000%2Cpm2rdm&lang=ru_RU"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 16px;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">✦ Lash Lili</span>
+          <p class="footer__tagline">Почувствуйте ощущение красоты 🌸</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://telegram.me/ssn_beautybot" target="_blank" class="footer__link">Telegram</a>
+          <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="footer__link">Max</a>
+          <a href="https://vk.com/lash_lili_studio" target="_blank" class="footer__link">VK</a>
+          <span class="footer__link">Instagram*</span>
+        </div>
+        <div class="footer__copy">
+          <p>© 2026 Lash Lili Studio. Все права защищены.</p>
+          <p class="footer__dev">Разработано <a href="https://югспецсети.рф" target="_blank">агентством автоматизации бизнес-процессов ЮгСпецСети.рф</a></p>
+          <p style="font-size:0.7rem; opacity:0.5; margin-top:4px;">* Instagram — социальная сеть, запрещённая на территории РФ</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="floating" id="floating">
+    <a href="https://max.ru/id910614084910_3_bot" target="_blank" class="floating__btn floating__btn--max" aria-label="Написать в Max">
+      <span style="font-size:22px; font-weight:700; line-height:1;">M</span>
+      <span class="floating__pulse"></span>
+    </a>
+    <a href="https://telegram.me/ssn_beautybot" target="_blank" class="floating__btn" aria-label="Написать в Telegram">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.97 9.28c-.146.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.357.263-.727.263l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+      <span class="floating__pulse"></span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

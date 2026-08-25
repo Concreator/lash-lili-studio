@@ -1,0 +1,4 @@
+backup/
+*.md
+!site/README.md
+.git/
