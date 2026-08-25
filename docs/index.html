@@ -796,6 +796,18 @@
     </a>
   </div>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
+  <script>
+    (function(){
+      function send(){
+        if(window.parent && window.parent !== window){
+          window.parent.postMessage(JSON.stringify({type:'resize',height:document.documentElement.scrollHeight}),'*');
+        }
+      }
+      send();
+      window.addEventListener('load',send);
+      window.addEventListener('resize',send);
+    })();
+  </script>
 </body>
 </html>
