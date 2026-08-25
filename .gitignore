@@ -1,4 +1,5 @@
 backup/
 *.md
+!DEPLOY.md
 !site/README.md
 .git/
